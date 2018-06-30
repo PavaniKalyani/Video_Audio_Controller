@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Video_Audio_Controller</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+  </head>
+  <body>
+  <video id="vid" src="videos/v1.mp4" autoplay poster="posterimage.jpg" controls="controls" loop muted>
+
+  </video>
+  <button type="button" name="button" onclick="p2()">pause</button>
+  <button type="button" name="button" onclick="p3()">play</button>
+  <br>
+  <audio id="aud" src="audios/a1.mp3" autoplay controls="controls" loop>
+
+  </audio>
+  <button type="button" name="button" onclick="p4()">pause</button>
+  <button type="button" name="button" onclick="p5()">play</button>
+  </body>
+  <script type="text/javascript">
+    function p2()
+    {
+      var video=document.getElementById("vid");
+      video.pause();
+    }
+    function p3()
+    {
+      var video=document.getElementById("vid");
+      video.play();
+    }
+    function p4()
+    {
+      var audio=document.getElementById("aud");
+      audio.pause();
+    }
+    function p5()
+    {
+      var audio=document.getElementById("aud");
+      audio.play();
+    }
+  </script>
+</html>
